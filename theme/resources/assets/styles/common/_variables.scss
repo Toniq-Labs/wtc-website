@@ -1,0 +1,33 @@
+/** Import Bootstrap functions */
+@import "~bootstrap/scss/functions";
+
+$theme-colors: (
+  primary: #007bff,
+  success: #00daab,
+  light: #eef6ff,
+  dark: #041031,
+);
+
+$container-max-widths: (
+  // sm: 540px,
+  // md: 720px,
+  // lg: 960px,
+  xl: 1450px
+);
+
+
+
+/** Bootstrap navbar fix (https://git.io/fADqW) */
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;
+
+$font-weight-normal: 300;
+$body-color: theme-color('dark');
+$headings-font-family: 'Rubik-Light', sans-serif;
+
+$font-family-base: 'Rubik-Light', sans-serif;
+
+$hamburger-layer-color: theme-color('success');
+$hamburger-layer-width: 1.5rem;
+$hamburger-layer-height: 1px;
+

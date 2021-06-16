@@ -1,0 +1,25 @@
+.team-member {
+    max-width: 302px;
+    margin-left: auto;
+    margin-right: auto;
+    p {
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 28px;
+    }
+    a:last-child {
+        margin-left: 1.5rem;
+    }
+    margin-bottom: 2rem;
+}
+
+.team-member__image {
+    border: 10px solid #fff;
+    border-radius: 50%;
+    width: 240px;
+    height: 240px;
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 10px 20px rgba(86, 102, 194, 0.17);
+    background-color: #ffffff;
+}

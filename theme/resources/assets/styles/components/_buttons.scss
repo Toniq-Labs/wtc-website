@@ -1,0 +1,16 @@
+.btn {
+    text-transform: uppercase;
+    min-width: 240px;
+    text-shadow: 0 2px 10px rgba(4, 16, 49, 0.3);
+    color: #ffffff;
+    font-family: 'Rubik-Regular';
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    @include media-breakpoint-down(xs) {
+        width: 127px;
+        min-width: 127px;
+        font-size: 11px;
+    }
+}

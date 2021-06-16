@@ -1,0 +1,226 @@
+// FAQs
+#faqs {
+    padding-top: 4.5rem;
+    padding-bottom: 6rem;
+
+    @include media-breakpoint-down(xs) {
+        padding-top: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-bottom: 3rem;
+
+        h2 {
+            max-width: 251px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2rem;
+        }
+ 
+        .vertical-line {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h2 + p {
+            display: none;
+        }
+     
+    }
+}
+
+// #team
+#team {
+    padding: 3rem 0;
+
+    @include media-breakpoint-down(xs) {
+        padding-bottom: 0.5rem;
+        padding-top: 2rem;
+    }
+}
+
+// infrastructure
+#infrastructure {
+    padding-top: 13rem;
+    position: relative;
+    background-image: url('/theme/dist/images/lab-illustration.png');
+    background-repeat: no-repeat;
+    background-position: 108% 50%;
+    background-size: 55%;
+
+    p {
+        margin-bottom: 7rem;
+    }
+    
+    .container > p:last-child {
+        margin-bottom: 3rem;
+    }
+
+    @include media-breakpoint-down(lg) {
+        background-size: 50%;
+        background-position-y: 60%; 
+
+        p {
+            margin-bottom: 2rem;
+        }
+    }
+
+    @include media-breakpoint-down(md) {
+        background: none;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 4rem;
+        img {
+            max-height: 300px;
+        }
+        p {
+            margin-bottom: 2rem;
+        }
+    }
+
+    @include media-breakpoint-down(xs) {
+        .container > p:last-child {
+            margin-bottom: 1rem;
+        }
+        h2 {
+            text-align: center;
+        }
+        .vertical-line {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        p {
+            text-align: justify;
+        }
+    }
+
+
+}
+
+// promotion
+#promotion {
+    position: relative;
+    padding: 0 4.5rem;
+    max-width: 1420px;
+    margin-left: auto;
+    margin-right: auto;
+    p {
+        font-weight: 500;
+        margin-bottom: 2rem;
+    }
+    img {
+        position: relative;
+        top: -1rem;
+        height: 110%;    
+    }
+    
+    @include media-breakpoint-down(md) {
+        padding: 2.5rem 2rem;
+        padding-bottom: 0;
+        &:after {
+            height: 5rem;
+            content: '';
+            width: 100%;
+            position: absolute;
+            left: 0px;
+            top: 101%;
+            margin-top: -5rem;
+            display: block;
+            z-index: 10;
+            background: #fff;
+        }
+        img {
+            top: 0;
+            height: auto; 
+            z-index: 20;
+        }
+    }
+    @include media-breakpoint-down(xs) {
+        p {
+            line-height: 32px;
+            font-size: 18px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+}
+
+// fee
+#fee {
+    padding: 5rem 0;
+    p:first-of-type {
+        margin-bottom: 3rem;
+    }
+    p:last-child {
+        font-size: 30px;
+    }
+    h3 {
+        font-family: "Rubik-Medium";
+        text-align: center;
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 64px;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+    }
+
+    @include media-breakpoint-down(md) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    @include media-breakpoint-down(xs) {
+
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+
+        .vertical-line {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h2 {
+            text-align: center;
+        }
+        h3 {
+            font-size: 20px;
+        }
+        p {
+            text-align: justify;
+            &:last-child {
+                font-size: 18px;
+                line-height: 32px;
+                font-family: 'Rubik-Regular', sans-serif;
+            }
+        }
+    }
+}
+
+//service
+#service {
+    padding: 5rem 0;
+
+    img {
+        max-height: 166px;
+    }
+    h3 {
+        color: #223f8e;
+    }
+    p {
+        &:last-child {
+            text-align: justify;
+        }
+    }
+
+    .service__feature {
+        max-width: 420px;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+
+    @include media-breakpoint-down(xs) {
+        padding-top: 2.5rem;
+        padding-bottom: 0;
+    }
+}

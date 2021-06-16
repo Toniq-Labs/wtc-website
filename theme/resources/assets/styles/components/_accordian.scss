@@ -1,0 +1,64 @@
+.accordian {
+    .btn {
+        text-decoration: none;
+        color: theme-color('dark');
+        font-size: 1.25rem;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding-left: 0;
+        padding-bottom: 0;
+        padding-top: 0;
+        @include media-breakpoint-down(xs) {
+            font-size: 11px;
+        }
+    }
+    p {
+        font-size: 1rem;
+        color: theme-color('primary');
+        margin-bottom: 0;
+        padding-top: 1rem;
+        @include media-breakpoint-down(xs) {
+            font-size: 11px;
+            line-height: 24px;
+        }
+    }
+    &__item {
+        padding: 1rem 0;
+        border-bottom: 1px solid theme-color('dark');
+    }
+}
+
+.accordian__toggle {
+
+
+    text-transform: initial;
+    text-shadow: none;
+    font-family: 'Rubik-Light';
+    font-size: 1.25rem;
+    font-weight: 400;
+    letter-spacing: initial;
+    text-align: left;
+    white-space: normal;
+
+
+    &-icon {
+        color: theme-color('success');
+        margin-left: 1rem;
+    }
+
+    img:first-child {
+        display: none;
+    }
+
+    &.collapsed {
+        img:first-child {
+            display: inline-block;
+        }
+        img:last-child {
+            display: none;
+        }
+    }
+}
+
+
